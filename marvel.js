@@ -8,7 +8,7 @@ request(URL, function (error, response, body) {
     }
     else{
 	const events = JSON.parse(body).data.results;
-//	showEvent(events, 0);
+
 	for (let x = 0; x < 3; x++){
 	    let dicEvent = {};
 	    let nameCreator = [];
@@ -28,12 +28,4 @@ request(URL, function (error, response, body) {
     }
 });
 
-/*async function showEvent(events, index){
-    if (index >= 3 ){
-	return;
-    }
-    console.log(events[index].id);
-    index += 1;
-    showEvent(events, index);
-}
-*/
+
